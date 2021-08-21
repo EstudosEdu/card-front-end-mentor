@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+  /* --main-bg-color: brown; */
+  /* ### Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+
+  --Very--pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --color-braco: white;
+}
+
+body{
+  background: var(--Very--pale-blue);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.container {
+  width: 400px;
+  margin: 30px auto;
+  border-radius: 20px;
+  background: var(--color-braco);
+  transition: 2s;
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+}
+
+/* Titulo */
+h1{
+  margin: 30px 0 10px 0;
+  font-size: 1.82rem;
+  text-align: center;
+  font-weight: bold;
+  color: hsl(223, 47%, 23%);
+}
+
+/* Paragrafo */
+#primeiro-P{
+  text-align: center;
+  margin: 10px auto 0 auto;
+  width: 80%;
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+}
+
+/* Container Informações */
+.mini-container{
+  margin: 10px auto 0 auto;
+  border-radius: 10px;
+  width: 80%;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Informações */
+
+#icone-music {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  padding: 15px 10px 15px 20px;
+}
+
+.infos{
+  padding: 10px;
+}
+
+#p-1{
+  font-weight: 900;
+  font-size: 0.94rem;
+  color: hsl(223, 47%, 23%);
+}
+
+#p-2{
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+}
+
+#link-change{
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+}
+
+/* botões  */
+#btn-1{
+  margin: 25px auto 10px auto;
+  padding: 15px 10px 15px 10px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  background: var(--Bright-blue);
+  color: var(--color-braco);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 18px 30px 0px rgb(0 0 0 / 20%);
+  transition: transform .6s;
+}
+#btn-1:hover{
+  transform: scale(1.1);
+}
+
+#cancelar{
+  width: max-content;
+  margin: 40px auto 0 auto;
+  padding-bottom: 50px;
+  cursor: pointer;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  transition: transform .6s;
+}
+#cancelar:hover{
+  transform: scale(1.1);
+  color: rgb(78, 78, 78);
+}
